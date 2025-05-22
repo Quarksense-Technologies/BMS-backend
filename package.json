@@ -1,18 +1,24 @@
 {
   "name": "bms-backend",
   "version": "1.0.0",
-  "description": "Backend for BMS CRM",
-  "main": "server/index.js",
-  "type": "commonjs", 
+  "description": "Backend for BMS CRM system",
+  "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
+  "keywords": [
+    "express",
+    "mongoose",
+    "crm",
+    "api",
+    "backend"
+  ],
   "author": "Quarksense Technologies",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.0",
-    "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
