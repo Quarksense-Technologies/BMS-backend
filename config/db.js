@@ -13,7 +13,7 @@ export const connectDB = async () => {
       connectTimeoutMS: 120000, // Increased to 120 seconds
       maxPoolSize: 50, // Increased pool size for better concurrent connection handling
       bufferCommands: true, // Enable command buffering
-      bufferTimeoutMS: 30000, // Set buffer timeout to 30 seconds
+      //bufferTimeoutMS: 30000, // Set buffer timeout to 30 seconds
       heartbeatFrequencyMS: 10000, // More frequent heartbeats
       minPoolSize: 10, // Maintain minimum connections
       maxIdleTimeMS: 60000, // Maximum idle time for connections
