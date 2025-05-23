@@ -1,13 +1,13 @@
-const express = require('express');
-const cors = require('cors');
-const dotenv = require('dotenv');
-const { connectDB } = require('./config/db');
-const authRoutes = require('./routes/auth.routes');
-const userRoutes = require('./routes/user.routes');
-const companyRoutes = require('./routes/company.routes');
-const projectRoutes = require('./routes/project.routes');
-const financeRoutes = require('./routes/finance.routes');
-const { errorHandler } = require('./middleware/error.middleware');
+import express from 'express';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import { connectDB } from './config/db.js';
+import authRoutes from './routes/auth.routes.js';
+import userRoutes from './routes/user.routes.js';
+import companyRoutes from './routes/company.routes.js';
+import projectRoutes from './routes/project.routes.js';
+import financeRoutes from './routes/finance.routes.js';
+import { errorHandler } from './middleware/error.middleware.js';
 
 dotenv.config();
 
@@ -17,6 +17,8 @@ connectDB();
 const app = express();
 
 // Enable CORS with specific configuration
+//const cors = require('cors');
+
 app.use(cors({
   origin: function (origin, callback) {
     callback(null, true); // allow all origins
