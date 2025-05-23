@@ -6,6 +6,7 @@ WORKDIR /app
 # Copy dependency files and install them
 COPY package*.json ./
 RUN npm install
+RUN npm install bcryptjs
 
 # Copy all project files
 COPY . .
